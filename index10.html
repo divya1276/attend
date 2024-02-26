@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Tracker</title>
+</head>
+<body>
+    <h1>Attendance Tracker</h1>
+    <form action="/mark_attendance" method="post">
+        <label for="event">Event:</label>
+        <input type="text" id="event" name="event"><br><br>
+        <label for="attendee">Attendee:</label>
+        <input type="text" id="attendee" name="attendee"><br><br>
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <a href="/attendance_records">View Attendance Records</a>
+</body>
+</html>
